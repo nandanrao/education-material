@@ -1,3 +1,3 @@
 # Background Material 
 
-## [Dark Triad](/dark-triad.pdf)
+## [Dark Triad](/predicting-personality/dark-triad.pdf)
