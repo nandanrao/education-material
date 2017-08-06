@@ -54,6 +54,8 @@ They also specify very clearly their goal being interpretation by finding all fe
 
 They mention that they, as in some past literature, also treat the personality trait prediction as a classification problem, classifying high/low traits and ignoring the middle, but defend the use of correlation as a more natural objective function as personalit is measured on a continuous scale.
 
+Most importantly, when reporting their pearson correlations they mention that their best score, 0.42, "fell just above the standard 'correlational upper-limit' for behavior to predict personality (0.3 - 0.4)", which they give Pyschological Testing and The Power of Personality as references for this number.
+
 75000 users.
 
 
@@ -66,7 +68,12 @@ Finds 7 factors in self-descriptions not fully correlated with big 5?? Need to r
 
 ## [Psychological Testing and Psychological Assessment](/predicting-personality/psychological-testing-and-assessment.pdf)
 
-Self reports and reports of others/professionals/adults(vs. kids) can have correlations that are super low, .2-.3. Makes strong recommendations for always doing multiple tests for psychological testing. Used by other papers to discuss how good a "good" correlation is, but it's a very silly comparrison because here they are looking at medical interventions and seeing if things have an impact, not predicting/substituting!
+Self reports and reports of others/professionals/adults(vs. kids) can have correlations that are super low, .2-.3. Makes strong recommendations for always doing multiple tests for psychological testing. It can be seen that in predicting anything, personality traits never achieve correlation scores very high.
+
+## [The Power of Personality]
+
+Metaanalysis of research linking personality traits to life outcomes, spends a decent amount of time saying that personal psychology shouldn't be dismissed because of low coefficients, which range up to 0.4 for predicting behaviors or outcomes.
+
 
 # NOTES / TODO
 
