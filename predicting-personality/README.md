@@ -81,7 +81,7 @@ They mention that they, as in some past literature, also treat the personality t
 Most importantly, when reporting their correlations they mention that their best score, 0.42, "fell just above the standard 'correlational upper-limit' for behavior to predict personality (0.3 - 0.4)", which they give Pyschological Testing and The Power of Personality as references for this number.
 
 
-## Private Traits are Predictable from Digital Records of Human Behavior(/predicting-personality/private-traits.pdf)
+## [Private Traits are Predictable from Digital Records of Human Behavior](/predicting-personality/private-traits.pdf)
 
 #### Traits
 20-question IPIP questionnaire for 5 traits. 58000 participants.
@@ -119,14 +119,14 @@ Similarly it is important to distinguish between stability and retest reliabilit
 
 Some numbers from this meta-analysis report alpha's between .58 - .9, and retest consistency between .66 and .92 for a 6-month period for the NEO-PI-R personality inventory.
 
+
 ## [Psychological Testing and Psychological Assessment](/predicting-personality/psychological-testing-and-assessment.pdf)
 
 Self reports and reports of others/professionals/adults(vs. kids) can have correlations that are super low, .2-.3. Makes strong recommendations for always doing multiple tests for psychological testing. It can be seen that in predicting anything, personality traits never achieve correlation scores very high.
 
-## [The Power of Personality]
+## [The Power of Personality](/predicting-personality/predicting-life-outcomes.pdf)
 
 Metaanalysis of research linking personality traits to life outcomes, spends a decent amount of time saying that personal psychology shouldn't be dismissed because of low coefficients, which range up to 0.4 for predicting behaviors or outcomes.
-
 
 ## [Revealing Dimensions of Thinking in Open-Ended Self- Descriptions](/predicting-personality/open-ended-self-descriptions.pdf)
 
@@ -135,9 +135,18 @@ Finds 7 factors in self-descriptions not fully correlated with big 5?? Still nee
 
 # Conclusions
 
-* Cronbach's alpha is between .68 and .75 for our bigfive survey / traits. We can also look at variance within each individual user.
+## Objective Function for Regression
 
-* RankBoost. ?
-* Psychology papers on "correlational upper-limit" for behavior to predict personality...
+It is clear that there are two main camps, that of treating personality as a continuous value, and that of considering it to be a rank-order problem. Generally treating it as a continuous value is clearly more popular, especially among the more seminal papers. Conceptually, this difference has to do with the accuracy of the test in placing individuals on a score that is representative and can be compared to different populations (in which case it is a continuous-value problem), versus seeing the test as an activity performed within a certain context that can only be compared within that context (in which case it could make more sense to consider this as a rank problem). A simple recommendation for us to compare the sensitivity of our results across rank and continuous-valued error measures. 
 
-# To Read
+## Validity of Ground Truth
+
+This is the biggest open question and one that is not treated at all in many of the prediction cases studied here. The personality traits are latent variables, so the accuracy of our prediction has to do with the uncertainty in our "ground truth."
+
+The authors of [Personality, Gender, and Age in the Language of Social Media](/predicting-personality/personality-gender-and-age.pdf) use the psychology literature to defend that .3-.4 is anyways the upper limit of correlation between questionnaire-measured personality traits and obvserved behavior, so that is the upper-limit of what can be expected from their prediction, so there prediction is "good."
+
+The authors of [Private Traits are Predictable from Digital Records of Human Behavior](/predicting-personality/private-traits.pdf) use the re-test correlation numbers to compare their prediction correlation numbers, without making any judgement as to whether they are close or not, or considering any other measure of questionnaire-personality validity.
+
+Diving into the psychology literature we see this is a question well-discussed conceptually without formal consensus. The Cronbach's alpha is between .68 and .75 for our bigfive survey / traits. We could consider doing re-test correlations ourselves or finding measurements from other studies using the same questionnaire.
+
+Not discussed anywhere is the potential difference in uncertainty/variance for different types of subjects. It is easy to see that in our data, we have a wide range of internal consistency across different subjects, which can be looked at as a measure of uncertainty or variance around the underlying latent trait we are trying to predict, and could potentially be included formally in our prediction model as well. 
